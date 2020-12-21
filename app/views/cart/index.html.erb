@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+<div id="itemsContainer">
+    <table id="customers">
+        <% total = 0 %>
+        <% @cart.each do |id, quantity| %>
+          <% item = Item.find_by_id(id) %>
+         <tr>
+            <td>
+                <div class="image">
+<%= link_to item.title, item %>
+                </div>
+                </td>
+        </tr>
+    </table>
+      </div>
+
+
+
