@@ -12,8 +12,8 @@ get '/about' => 'static_pages#about'
 
   resources :registrations
   
-get ‘/login’ => ‘user#login’ 
-get ‘/logout’ => ‘user#logout’
+get '/login' => 'user#login'
+get '/logout' => 'user#logout'
 
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  #For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
