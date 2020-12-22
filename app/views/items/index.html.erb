@@ -2,7 +2,7 @@
 
  <div id="itemsContainer">
   
-  <h1>Cart</h1>
+  <h1>Items</h1>
      
       <% @items.each do |item| %>
       <div class="itemhols">
@@ -20,6 +20,7 @@
          <%= link_to 'Show',  item, :class => "button", :role => "button" %>
          <%= link_to 'Edit',  edit_item_path(item), :class => "button", :role => "button" %>
          <%= link_to 'Destroy',  item, method: :delete, data: { confirm: 'Are you sure?' }, :class => "button", :role => "button" %>
+         <a href="/cart/<%= item.id %>" class="button">Add To Cart</a>
        </p>
         
         
@@ -29,6 +30,8 @@
 </div>
 
 <br>
-<%= link_to 'New Item',  new_item_path, :class => "button", :role => "button" %>
-
-
+<footer class="foot">
+<% if session[:login] == 1 %>    
+<%= link_to 'New Item', new_item_path, :class =>"button", :role=>"button" %>
+<% end %>
+</footer>

@@ -22,6 +22,11 @@ class CartController < ApplicationController
     redirect_to :action => :index
   
   end
+  def clearCart
+    #sets session variable to nil and bring back to index
+    session[:cart] = nil
+    redirect_to :action => :index
+  end 
   
   def index
     # passes a cart to display
