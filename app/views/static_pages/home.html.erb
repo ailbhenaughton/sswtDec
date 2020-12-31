@@ -1,12 +1,16 @@
 <% provide(:title, "Home") %>
 
 <div class="mainCont">
-<%= image_tag("golfswing.jpg", alt: "Welcome Logo", :class => "welcomeIm") %>    
-    
+<%= image_tag("LaPetizalogo.png", alt: "Welcome Logo", :class => "welcomeIm") %>    
+<%provide(:title, "Home")%>
     
 <h1>Home</h1>
-<p>Welcome to your first home page!</p>
+<p>La Petiza Argentinian food store</p>
 <br>
 <br>
-<p>This will be the home page of the web app we will create together</p>
+<p>“We are a small family shop based in temple bar, in the heart of the city centre, looking to bring the best quality Argentinian food to Dublin.
+
+Together with our chef and Argentinian suppliers, we aim to share unique Argentinian cuisine offering people an opportunity to explore and try a little bit of Argentina.”</p>
+
+<%=render 'layouts/categories'%>
 </div>

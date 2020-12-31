@@ -1,7 +1,8 @@
 class StaticPagesController < ApplicationController
   def home
+    @categories = Category.all
   end
-
+  
   def help
   end
 
@@ -14,12 +15,15 @@ class StaticPagesController < ApplicationController
     @order.update_attribute(:status , "Paid by User: #{current_user.email}")
     #"Paid by User:#{current_user.id} #{current_user.name} #{current_user.surname}")
   end
-  
-  def paid
-    # redirect_to "/cart/clear"
-    @order = Order.find_by(id: params[:id])
-    @order.update_attribute(:status , "Paid by User: #{current_user.email}")
-    #"Paid by User:#{current_user.id} #{current_user.name} #{current_user.surname}")
+
+  def category
+    catName = params[:title]
+    @items = Item.where("category like ?", catName)
+  end
+
+  def aboutSend
+        @order = Order.find(params[:id])
+        @order.update_attribute(:status, "Paid with Paypal")
   end
 
 end

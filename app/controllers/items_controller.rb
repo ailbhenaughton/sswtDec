@@ -21,6 +21,12 @@ class ItemsController < ApplicationController
   def edit
   end
 
+    def search
+     st = "%#{params[:q]}%"
+     @items = Item.where("title like ?", st)
+    end
+
+
   # POST /items
   # POST /items.json
   def create

@@ -1,34 +1,29 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @item.title %>
-</p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @item.description %>
-</p>
 
-<p>
-  <strong>Price:</strong>
-  <%= @item.price %>
-</p>
-
-<p>
-  <strong>Image url:</strong>
-  <%= @item.image_url %>
-</p>
-
-<p>
-  <strong>Category:</strong>
-  <%= @item.category %>
-</p>
-
-<p>
-  <strong>Brand:</strong>
-  <%= @item.brand %>
-</p>
+ <div id="itemsContainer">
+   <h1><%= @item.title %></h1>
+   <%= image_tag @item.image_url, :class => 'welcomIm'  %>
+       <h2><%= @item.description %></h1>
+   
+    <div class="itemhols">
+       <p>Price <%= number_to_currency(@item.price, :unit => "€") %>
+       <br>
+        Category: <%= @item.category %>
+        <br>
+        Brand: <%= @item.brand %></p>
+       
+       <p>
+         <%= link_to 'Back',  items_path, :class => "button", :role => "button" %>
+         <%= link_to 'Edit',  edit_item_path(@item), :class => "button", :role => "button" %>
+         
+       </p>
+        
+      </div>
+   
+   
+   </div>
 
 <%= link_to 'Edit', edit_item_path(@item) %> |
 <%= link_to 'Back', items_path %>
