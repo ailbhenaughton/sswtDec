@@ -53,7 +53,6 @@ li a {
     width: 100%;
     margin-top: 10px;
     overflow: auto;
-    
 }
 
 .fa {
@@ -100,7 +99,7 @@ li a {
 }
 
 .headSec {
-    background: url("/assets/site/golfcourse.jpg");
+    background: url("/assets/site/image2.jpg");
     background-repeat: no-repeat;
     background-size:100% 100%;
     min-height:10px;
@@ -108,34 +107,28 @@ li a {
     width: 100%;
     margin-bottom:10px;
     overflow: auto;
-    
 }
 
 .container {
-      background: url("/assets/site/image.png");
-      background-repeat:no-repeat;
-      background-position:right bottom;
-      width: 100%;
-      min-height: 700px;
-      
+     background: url("/assets/site/image.png");
+     background-repeat:no-repeat;
+     background-position:right bottom;
+     width: 100%;
+     min-height: 700px;
 }
 
 #itemsContainer {
     width: 100%;
     text-align: center;
-    
-    
 }
 
 
 #itemsContainer h1 {
    display: block;
-    color: #e8268e;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    
-    
+   color: #e8268e;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
 }
 
 
@@ -147,29 +140,26 @@ li a {
     width: 22%;
     padding:10px;
     min-height: 300px;
-   
 }
 
 
 .itemhols h1 {
    display: block;
-    color: #e8268e;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 20px
-    
+   color: #e8268e;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 20px
 }
 
 
 .itemhols p {
    display: block;
-    color: #e8268e;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 16px
-    
+   color: #e8268e;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 16px
 }
 
 
@@ -179,7 +169,6 @@ li a {
     margin-left: auto; 
     margin-right: auto; 
     display: block;
-    
 }
 
 
